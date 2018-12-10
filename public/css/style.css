@@ -1,11 +1,14 @@
 .topnav {
   background-color: #2D2D2D;
   overflow: hidden;
+  color: white;
+
 }
 
 .topnav a {
   float: left;
-  color:(171,143,448);
+  color: white;
+  background-color: #2D2D2D;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -88,7 +91,7 @@
 }
 
 table {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, Helvetica, helvetica;
   border-collapse: collapse;
   width: 100%;
 }
