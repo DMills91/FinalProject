@@ -27,6 +27,12 @@
   color: white;
 }
 
+.topnav a.active:hover {
+  background-color: #4c4c4c;
+  color: white;
+  text-decoration: none;
+}
+
 .center {
   position: fixed;
   top: 30%;
@@ -209,4 +215,17 @@ th[role=columnheader]:not(.no-sort):hover:after {
     background-color: #000000;
     color: white;
     margin-top: 26%;
+}
+
+#logout{
+  background-color: #D90F13;
+  color: white;
+  float: right;
+}
+
+#logout:hover{
+  background-color: #e45759;
+  color: white;
+  text-decoration: none;
+  float: right;
 }
