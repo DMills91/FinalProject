@@ -205,3 +205,8 @@ th[role=columnheader]:not(.no-sort):hover:after {
     margin-bottom: 5;
     margin-top: 25;
 }
+.t8-footer{
+    background-color: #000000;
+    color: white;
+    margin-top: 26%;
+}
