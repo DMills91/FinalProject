@@ -2,6 +2,7 @@
   background-color: #2D2D2D;
   overflow: hidden;
   color: white;
+  font: 20px Roboto;
 
 }
 
@@ -32,6 +33,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-decoration: none;
+
   /* font-size: 7vw; */
 }
 
@@ -74,6 +76,7 @@
   border-radius: 5px;
   background-color: rgb(242, 242, 242);
   padding: 20px;
+  font: Roboto;
 }
 
 .headshot {
@@ -88,6 +91,7 @@
 
 .title {
   text-align: center;
+  font: Roboto;
 }
 
 table {
