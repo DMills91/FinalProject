@@ -224,7 +224,7 @@ th[role=columnheader]:not(.no-sort):hover:after {
 }
 
 #logout:hover{
-  background-color: #e45759;
+  background-color: #e03e42;
   color: white;
   text-decoration: none;
   float: right;
