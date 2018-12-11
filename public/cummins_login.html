@@ -150,10 +150,12 @@
   </head>
   <body>
       <header>
-          <div class="header">
-          <img src="Images/ridgeway_logo_sm.png" alt="Ridgeway Logo">
-          <h1>Main Customer Login Portal</h1>
-          </div>
+        <div class="topnav">
+          <a class="active" href="index.html">Cummins</a>
+          <a href="client.html"></a>
+          <a href="site.html"></a>
+          <a href="turbine.html"></a>
+        </div>
       </header>
 
         </nav>
@@ -161,11 +163,10 @@
 
           <div class="login-page">
               <div class="form">
-                <form onSubmit="return checkAnswer();">
-                </form> class="login-form">
-                  <input type="text" placeholder="Member ID"/>
+                <form onSubmit="return checkAnswer();" class="login-form">
+                  <input id="answer" type="text" placeholder="Customer Reference Number"/>
                   <input type="password" placeholder="Password"/>
-                  <button type="submit">login</button>
+                  <button type="submit" class="submit" value="Submit"> login </button></button>
                 </form>
               </div>
           </div>
@@ -174,4 +175,19 @@
     <footer>
       © 2018 Cummins Inc., Box 3005, Columbus, IN 47202-3005 U.S.A.
     </footer>
+    <script>
+      function checkAnswer(){
+        var response = document.getElementById('answer').value;
+        if (response == "150")
+        location = 'http://ec2-54-187-230-75.us-west-2.compute.amazonaws.com/150.html'; // 'right.html';
+        else
+        location = 'http://ec2-54-187-230-75.us-west-2.compute.amazonaws.com/153.html'; // 'wrong.html';
+        return false;
+        }
+ </script>
+
+
+
+
+  </body>
 </html>
