@@ -32,20 +32,21 @@
       right: 0;
       left: 0;
       z-index: -1;
-      backgroun
+      background-repeat: no-repeat;
     }
 
   </style>
 
-  <title>Turbine</title>
+  <title>Orders150</title>
 
 </head>
 
 <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="client.html">Client</a>
-  <a href="site.html">Site</a>
-  <a class="active" href="turbine.html">Information</a>
+  <a class="active" href="150.html">Home</a>
+  <a href="account150.html">Account</a>
+  <a href="catalog.html">Product Catalog</a>
+  <a href="orders150.html">Sales Orders</a>
+  <a id="logout" href="index.html">Logout</a>
 </div>
 
 <body>
@@ -67,7 +68,7 @@
             <th>Document Date</th>
           </tr>
         </thead>
-        <tbody v-for="o in orders" :key="t.turbineId" :id="'turbine- ' + t.turbineId">
+        <tbody v-for="o in orders" :key="o.orderId" :id="'order- ' + o.orderId">
           <tr>
             <td>{{o.salesOrder}}</td>
             <td>{{o.soldToParty}}</td>
