@@ -4,6 +4,7 @@
   color: white;
   font: 20px Roboto;
 
+
 }
 
 .topnav a {
@@ -95,7 +96,7 @@
 }
 
 table {
-  font-family: "Trebuchet MS", Helvetica, Helvetica, helvetica;
+  font-family: "Trebuchet MS", , Helvetica, helvetica;
   border-collapse: collapse;
   width: 100%;
 }
