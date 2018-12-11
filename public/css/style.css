@@ -47,6 +47,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font: 84px Roboto;
 }
 
 .center2 {
