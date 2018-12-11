@@ -102,30 +102,33 @@
 }
 
 table {
-  font-family: "Trebuchet MS", , Helvetica, helvetica;
+  font: Roboto;
   border-collapse: collapse;
   width: 100%;
 }
 
  td, th {
-  border: 1px solid #5C7491;
+  border: 1px solid #FFFFFF;
   padding: 8px;
+  font: Roboto;
+  align-content: center;
 }
 
 tr:nth-child(even) {
-  background-color: rgb(242, 242, 242);
+  background-color:  #c0c0c0;
 }
 
 tr:hover {
-  background-color:#ACB3BE;
+  background-color:#e45759;
 }
 
 th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
-  background-color: #5C7491;
+  text-align: center;
+  background-color: #000000;
   color: white;
+  font: Roboto;
 }
 
 input[type=text], select {
@@ -133,7 +136,7 @@ input[type=text], select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid rgb(204, 204, 202);
+  border: 1px solid #FFFFFFF;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -163,7 +166,7 @@ th[role=columnheader]:not(.no-sort):after {
   margin-top: 7px;
   border-width: 0 4px 4px;
   border-style: solid;
-  border-color: #404040 transparent;
+  border-color: #FFFFFFF transparent;
   visibility: hidden;
   opacity: 0;
   -ms-user-select: none;
@@ -224,7 +227,7 @@ th[role=columnheader]:not(.no-sort):hover:after {
 }
 
 #logout:hover{
-  background-color: #e03e42;
+  background-color: #e45759;
   color: white;
   text-decoration: none;
   float: right;
