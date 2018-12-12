@@ -10,7 +10,7 @@ class Order
   public $DocumentDate;
 
   public function __construct($data) {
-    $this->SalesOrder = $data($data['salesOrder']);
+    $this->SalesOrder = stingval($data['salesOrder']);
     $this->SoldToParty = $data['soldToParty'];
     $this->CustRef = $data['customerReference'];
     $this->DeliveryDate = $data($data['requestedDelivDate']);
