@@ -1,9 +1,9 @@
 <?php
 require '../../app/common.php';
 // 1. Go to the database and get all turbines
-$turbines = Turbine::fetchTurbines();
+$orders = Order::fetchOrders();
 // 2. Convert to JSON
-$json = json_encode($turbines, JSON_PRETTY_PRINT);
+$json = json_encode($orders, JSON_PRETTY_PRINT);
 // 3. Print
 header('Content-Type: application/json');
 echo $json;
