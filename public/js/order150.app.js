@@ -1,4 +1,3 @@
-window.onload = function () {
 var ordersApp = new Vue({
   el: '#orderMain',
   data: {
@@ -25,5 +24,4 @@ methods: {
     this.fetchOrders();
 
   }
-});
-}
+})
