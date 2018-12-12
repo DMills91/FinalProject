@@ -1,5 +1,5 @@
-var turbineApp = new Vue({
-  el: '#turbineMain',
+var ordersApp = new Vue({
+  el: '#orderMain',
   data: {
     turbine: [],
     sensor: [],
@@ -7,10 +7,10 @@ var turbineApp = new Vue({
 
 methods: {
 
-  fetchTurbines(){
-    fetch('api/turbine.php')
+  fetchOrders(){
+    fetch('api/salesorder.php')
     .then( response => response.json() )
-    .then( json => {turbineApp.turbine = json} )
+    .then( json => {ordersApp.turbine = json} )
     .catch( err => {
       console.log('TURBINE FETCH ERROR:');
       console.log(err);
