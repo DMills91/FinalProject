@@ -247,7 +247,9 @@
                         <form @submit.prevent="handleCommentForm">
                           <div class="form-group row">
                             <input type="text" id="comment" v-model="commentForm.comment" class="form-control" required>
-                            <button id="redbutton" type="submit">Submit Comment</button>
+                            <div style="text-align:center;">
+                              <button id="redbutton" type="submit">Submit Comment</button>
+                            </div>
                           </div>
                         </form>
                       </div>
