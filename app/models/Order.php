@@ -10,13 +10,13 @@ class Order
   public $DocumentDate;
 
   public function __construct($row) {
-    $this->SalesOrder = $row['salesOrder'];
-    $this->SoldToParty = $row['soldToParty'];
-    $this->CustRef = $row['customerReference'];
-    $this->DeliveryDate = $row['requestedDelivDate'];
-    $this->OverallStatus = $row['overallStatus'];
-    $this->NetValue = $row['netValue'];
-    $this->DocumentDate = $row['documentDate'];
+    $this->SalesOrder = $row['SalesOrder'];
+    $this->SoldToParty = $row['SoldToParty'];
+    $this->CustRef = $row['CustRef'];
+    $this->DeliveryDate = $row['DeliveryDate'];
+    $this->OverallStatus = $row['OverallStatus'];
+    $this->NetValue = $row['NetValue'];
+    $this->DocumentDate = $row['DocumentDate'];
   }
 
   public static function fetchOrders() {

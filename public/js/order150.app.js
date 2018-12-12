@@ -1,14 +1,16 @@
 var ordersApp = new Vue({
   el: '#orderMain',
   data: {
+    Paccar: {
       SalesOrder: "",
       SoldToParty: "",
       CustRef: "",
       DeliveryDate: "",
       OverallStatus: "",
       NetValue: "",
-      DocumentDate: "",
-      
+      DocumentDate: ""
+    },
+
     orders: [],
   },
 
