@@ -16,3 +16,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'
 require 'models/Order.php';
 require 'models/Order153.php';
 require 'models/Comment.php';
+require 'models/Comment153.php';
