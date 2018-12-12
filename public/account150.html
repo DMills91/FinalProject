@@ -228,7 +228,7 @@
                     <hr>
                     <main id="commentMain">
                       <div>
-                        <h2>Please enter your comment below:</h2>
+                        <h4>Please enter your comment below:</h4>
                         <form @submit.prevent="handleCommentForm">
                           <div class="form-group row">
                             <input type="text" id="comment" v-model="commentForm.comment" class="form-control" required>
@@ -238,7 +238,7 @@
                       </div>
 
                       <div>
-                        <h2>Past Comments</h2>
+                        <h4>Past Comments</h4>
                         <table>
                           <!-- <tbody v-for="c in comment" :key="c.id" :id="'comment- ' + c.id"> -->
                           <tbody v-for="c in comment">
