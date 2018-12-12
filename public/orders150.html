@@ -63,7 +63,7 @@
             <th>Document Date</th>
           </tr>
         </thead>
-        <tbody v-for="o in orders" :key="o.orderId" :id="'order- ' + o.orderId">
+        <tbody v-for="o in orders">
           <tr>
             <td>{{o.salesOrder}}</td>
             <td>{{o.soldToParty}}</td>
