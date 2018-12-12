@@ -1,6 +1,15 @@
 var ordersApp = new Vue({
   el: '#orderMain',
   data: {
+    order: {
+      SalesOrder: "",
+      SoldToParty: "",
+      CustRef: "",
+      DeliveryDate: "",
+      OverallStatus: "",
+      NetValue: "",
+      DocumentDate: ""
+    },
     orders: [],
   },
 
