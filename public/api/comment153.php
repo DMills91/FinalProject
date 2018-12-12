@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $clientId = intval($_GET['clientId'] ?? 0);
 
 // 1. Go to the database and get all turbines
-$comments = Comment::fetchComments($clientId);
+$comments = Comment153::fetchComments153($clientId);
 // 2. Convert to JSON
 $json = json_encode($comments, JSON_PRETTY_PRINT);
 // 3. Print

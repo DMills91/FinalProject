@@ -1,5 +1,5 @@
 <?php
-class Comment
+class Comment153
 {
   public $commentId;
   public $clientId;
@@ -29,7 +29,7 @@ class Comment
     $this->commentId = $db->lastInsertId();
   }
 
-  public static function fetchComments(int $clientId) {
+  public static function fetchComments153(int $clientId) {
       // 1. Connect to the database
       $db = new PDO(DB_SERVER, DB_USER, DB_PW);
       // 2. Prepare the query
@@ -42,8 +42,8 @@ class Comment
       // 4. Handle the results
       $arr = [];
       while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-        $theComment =  new Comment($row);
-        array_push($arr, $theComment);
+        $theComment153 =  new Comment153($row);
+        array_push($arr, $theComment153);
       }
       return $arr;
     }
