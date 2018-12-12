@@ -1,20 +1,13 @@
+window.onload = function () {
 var ordersApp = new Vue({
   el: '#orderMain',
   data: {
-    order: {
-      SalesOrder: "",
-      SoldToParty: "",
-      CustRef: "",
-      DeliveryDate: "",
-      OverallStatus: "",
-      NetValue: "",
-      DocumentDate: ""
-    },
     orders: [],
   },
 
-created () {
+methods: {
 
+  fetchOrders(){
     fetch('api/salesorder.php')
     .then( response => response.json() )
     .then( json => {ordersApp.orders = json} )
@@ -24,4 +17,13 @@ created () {
     })
   },
 
-})
+
+},
+
+  created () {
+
+    this.fetchOrders();
+
+  }
+});
+}
