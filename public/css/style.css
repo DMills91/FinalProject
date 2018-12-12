@@ -237,3 +237,14 @@ th[role=columnheader]:not(.no-sort):hover:after {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
