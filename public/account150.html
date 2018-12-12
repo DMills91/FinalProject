@@ -166,6 +166,9 @@
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
       </style>
@@ -247,9 +250,7 @@
                         <form @submit.prevent="handleCommentForm">
                           <div class="form-group row">
                             <input type="text" id="comment" v-model="commentForm.comment" class="form-control" required>
-                            <div style="text-align:center;">
-                              <button id="redbutton" type="submit">Submit Comment</button>
-                            </div>
+                            <button id="redbutton" type="submit">Submit Comment</button>
                           </div>
                         </form>
                       </div>
