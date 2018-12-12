@@ -13,9 +13,8 @@ var ordersApp = new Vue({
     orders: [],
   },
 
-methods: {
+created () {
 
-  fetchOrders(){
     fetch('api/salesorder.php')
     .then( response => response.json() )
     .then( json => {ordersApp.orders = json} )
@@ -25,12 +24,4 @@ methods: {
     })
   },
 
-
-},
-
-  created () {
-
-    this.fetchOrders();
-
-  }
 })
