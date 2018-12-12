@@ -55,7 +55,7 @@ var commentApp = new Vue({
     //console.log(clientId);
     this.clientId = clientId;
 
-    fetch('api/comment.php?clientId='+clientId)
+    fetch('api/comment153.php?clientId='+clientId)
     .then( response => response.json() )
     .then( json => {commentApp.comment = json} )
     .catch( err => {
