@@ -248,3 +248,7 @@ th[role=columnheader]:not(.no-sort):hover:after {
   min-width: 100%;
   min-height: 100%;
 }
+
+h2 {
+  font: Roboto;
+}
