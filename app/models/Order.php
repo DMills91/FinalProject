@@ -9,14 +9,14 @@ class Order
   public $NetValue;
   public $DocumentDate;
 
-  public function __construct($data) {
-    $this->SalesOrder = strval($data['salesOrder']);
-    $this->SoldToParty = strval($data['soldToParty']);
-    $this->CustRef = strval($data['customerReference']);
-    $this->DeliveryDate = $data['requestedDelivDate'];
-    $this->OverallStatus = strval($data['overallStatus']);
-    $this->NetValue = strval($data['netValue']);
-    $this->DocumentDate = $data['documentDate'];
+  public function __construct($row) {
+    $this->SalesOrder = $row['salesOrder'];
+    $this->SoldToParty = $row['soldToParty'];
+    $this->CustRef = $row['customerReference'];
+    $this->DeliveryDate = $row['requestedDelivDate'];
+    $this->OverallStatus = $row['overallStatus'];
+    $this->NetValue = $row['netValue'];
+    $this->DocumentDate = $row['documentDate'];
   }
 
   public static function fetchOrders() {
