@@ -13,4 +13,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'
 }
 
 //require files for class
-require 'models/salesorder.php';
+require 'models/Order.php';
