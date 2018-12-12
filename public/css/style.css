@@ -232,3 +232,8 @@ th[role=columnheader]:not(.no-sort):hover:after {
   text-decoration: none;
   float: right;
 }
+
+#catalogcard {
+  margin-left: 20px;
+  margin-right: 20px;
+}
